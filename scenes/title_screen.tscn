@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2b6pltlkgcm1"]
+
+[ext_resource type="Texture2D" uid="uid://bk2ckavoeigjf" path="res://assets/7.JPG" id="1_fgkus"]
+[ext_resource type="Script" uid="uid://n31jyi4v2qg3" path="res://scenes/title_screen.gd" id="1_sa3yf"]
+
+[node name="TitleScreen" type="Node2D"]
+script = ExtResource("1_sa3yf")
+
+[node name="Backround" type="TextureRect" parent="."]
+offset_right = 1896.0
+offset_bottom = 848.0
+scale = Vector2(0.60729, 0.763084)
+texture = ExtResource("1_fgkus")
+
+[node name="Title" type="RichTextLabel" parent="."]
+offset_left = 271.0
+offset_top = 60.0
+offset_right = 929.0
+offset_bottom = 229.0
+theme_override_constants/outline_size = 40
+theme_override_font_sizes/normal_font_size = 108
+text = "Pippo Game"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 444.0
+offset_top = 233.0
+offset_right = 706.0
+offset_bottom = 373.0
+scale = Vector2(1.1547, 1.61018)
+
+[node name="Start" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 26
+text = "Start Game"
+
+[node name="Settings" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 26
+text = "Settings"
+
+[node name="Quit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 26
+text = "Quit"
+
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
