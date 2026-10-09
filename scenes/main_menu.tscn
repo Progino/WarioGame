@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bp3p6d5ddwv6v"]
+
+[ext_resource type="Script" uid="uid://bwowory3kvyx1" path="res://scripts/main_menu.gd" id="1_l6cm7"]
+
+[node name="mainMenu" type="Node2D" unique_id=1682028840]
+script = ExtResource("1_l6cm7")
+
+[node name="TitleLabel" type="Label" parent="." unique_id=1246643659]
+offset_left = 285.0
+offset_top = 67.0
+offset_right = 880.0
+offset_bottom = 155.0
+theme_override_font_sizes/font_size = 64
+text = "Progino minigames"
+
+[node name="PlayButton" type="Button" parent="." unique_id=659086751]
+offset_left = 477.0
+offset_top = 315.0
+offset_right = 670.0
+offset_bottom = 368.0
+theme_override_font_sizes/font_size = 32
+text = "Play"

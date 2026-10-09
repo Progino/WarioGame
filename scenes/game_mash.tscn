@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://d0753hjslno73"]
+
+[ext_resource type="Script" uid="uid://dt1gr04sclt4t" path="res://scripts/game_mash.gd" id="1_lifib"]
+
+[node name="GameMash" type="Node2D" unique_id=1611377425]
+script = ExtResource("1_lifib")
+
+[node name="MicroTimer" type="Timer" parent="." unique_id=1039579343]
+
+[node name="Instructions" type="Label" parent="." unique_id=42331022]
+offset_left = 303.0
+offset_top = 132.0
+offset_right = 868.0
+offset_bottom = 208.0
+theme_override_font_sizes/font_size = 48
+text = "Press space"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MashBar" type="ProgressBar" parent="." unique_id=1112972274]
+offset_left = 412.0
+offset_top = 353.0
+offset_right = 750.0
+offset_bottom = 380.0
+max_value = 10.0

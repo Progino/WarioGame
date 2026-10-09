@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bk2smh22x5251"]
+
+[ext_resource type="Script" uid="uid://cjy8l2xrddmnb" path="res://scripts/game_dodge.gd" id="1_psmb4"]
+
+[node name="GameDodge" type="Node2D" unique_id=613611102]
+script = ExtResource("1_psmb4")
+
+[node name="Player" type="ColorRect" parent="." unique_id=1641481089]
+offset_left = 556.0
+offset_top = 535.0
+offset_right = 596.0
+offset_bottom = 575.0
+color = Color(3.2220055e-07, 0.2384823, 0.6214452, 1)
+
+[node name="Obstacle" type="ColorRect" parent="." unique_id=1056113573]
+offset_left = 553.0
+offset_top = 36.0
+offset_right = 593.0
+offset_bottom = 76.0
+color = Color(0.86304164, 0.09926631, 0, 1)
+
+[node name="MicroTimer" type="Timer" parent="." unique_id=2097048457]

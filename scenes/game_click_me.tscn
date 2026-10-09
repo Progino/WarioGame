@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bm7kxn8qndjkg"]
+
+[ext_resource type="Script" uid="uid://cyb12eiiakerp" path="res://scripts/game_click_me.gd" id="1_1lxa4"]
+
+[node name="GameClickMe" type="Node2D" unique_id=1332695341]
+script = ExtResource("1_1lxa4")
+
+[node name="MicroTimer" type="Timer" parent="." unique_id=1197448936]
+
+[node name="TargetButton" type="Button" parent="." unique_id=788258073]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 527.0
+offset_top = 298.0
+offset_right = 686.0
+offset_bottom = 342.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+text = "CLICK ME"
