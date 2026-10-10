@@ -13,6 +13,7 @@ offset_bottom = 575.0
 color = Color(3.2220055e-07, 0.2384823, 0.6214452, 1)
 
 [node name="Obstacle" type="ColorRect" parent="." unique_id=1056113573]
+visible = false
 offset_left = 553.0
 offset_top = 36.0
 offset_right = 593.0

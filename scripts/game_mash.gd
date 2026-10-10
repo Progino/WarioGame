@@ -5,6 +5,8 @@ signal game_over_signal(won: bool)
 @onready var timer: Timer = $MicroTimer
 @onready var bar: ProgressBar = $MashBar
 
+
+
 var clicks: int = 0
 var target_clicks: int = 10
 

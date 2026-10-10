@@ -10,6 +10,7 @@ offset_left = 285.0
 offset_top = 67.0
 offset_right = 880.0
 offset_bottom = 155.0
+size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 64
 text = "Progino minigames"
 
