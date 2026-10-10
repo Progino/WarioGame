@@ -10,7 +10,7 @@ var microgames_dict: Dictionary = {
 
 @onready var microgames: Array = microgames_dict.keys()
 
-var lives: int = 4
+var lives: int = 5
 var score: int = 0
 var current_game: Node = null
 var last_game_path: String = ""
