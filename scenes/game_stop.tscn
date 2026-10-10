@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://cxplo6vdnphof"]
+
+[ext_resource type="Script" uid="uid://bnj4fiyc7xyx0" path="res://scripts/game_stop.gd" id="1_l5ulj"]
+
+[node name="GameStop" type="Node2D" unique_id=1884230750]
+script = ExtResource("1_l5ulj")
+
+[node name="MicroTimer" type="Timer" parent="." unique_id=715449314]
+one_shot = true
+
+[node name="Goal" type="ColorRect" parent="." unique_id=38034341]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 850.0
+offset_top = 257.0
+offset_right = 926.0
+offset_bottom = 455.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(20, 20)
+color = Color(0.0999253, 0.701346, 0.083916135, 1)
+
+[node name="Player" type="ColorRect" parent="." unique_id=1732097587]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = 324.0
+offset_right = 40.0
+offset_bottom = 364.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(20, 20)
+color = Color(0.24313726, 0.20392157, 0.76862746, 1)

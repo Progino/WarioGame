@@ -1,10 +1,11 @@
 extends Node2D
 
-# Struttura dati dei microgiochi con i relativi comandi
+
 var microgames_dict: Dictionary = {
 	"res://scenes/game_click_me.tscn": "CLICK!",
 	"res://scenes/game_dodge.tscn": "DODGE!",
-	"res://scenes/game_mash.tscn": "PRESS!"
+	"res://scenes/game_mash.tscn": "PRESS!",
+	"res://scenes/game_stop.tscn":"STOP IT"
 }
 
 @onready var microgames: Array = microgames_dict.keys()
@@ -19,11 +20,9 @@ var is_game_over: bool = false
 @onready var time_bar: ProgressBar = $UI/TimeBar
 
 func _ready() -> void:
-	time_bar.hide() # Nascondiamo la barra all'inizio
 	start_intermission()
 
 func _process(_delta: float) -> void:
-	# Se c'è un microgioco attivo, aggiorna la barra del tempo
 	if is_instance_valid(current_game) and current_game.has_node("MicroTimer"):
 		var game_timer: Timer = current_game.get_node("MicroTimer")
 		if game_timer.time_left > 0:
@@ -38,7 +37,7 @@ func _input(event: InputEvent) -> void:
 			restart_entire_game()
 
 func start_intermission() -> void:
-	time_bar.hide() # Assicurati che la barra sia nascosta durante l'intermission
+	time_bar.hide()
 	
 	if lives <= 0:
 		trigger_game_over()
@@ -78,12 +77,12 @@ func execute_load(path: String) -> void:
 	current_game.game_over_signal.connect(_on_microgame_finished)
 	add_child(current_game)
 	
-	# Reimposta e mostra la barra del tempo appena il gioco inizia
+	
 	time_bar.value = 100
 	time_bar.show()
 
 func _on_microgame_finished(won: bool) -> void:
-	time_bar.hide() # Nascondiamo subito la barra appena il round finisce
+	time_bar.hide() 
 	
 	if is_instance_valid(current_game):
 		current_game.queue_free()

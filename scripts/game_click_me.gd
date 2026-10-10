@@ -17,7 +17,6 @@ func _ready() -> void:
 	
 	# Imposta la durata del microgioco (es. 4 secondi)
 	timer.wait_time = 4.0
-	timer.one_shot = true
 	timer.start()
 	
 	# Collega i segnali dei nodi interni tramite codice

@@ -6,6 +6,7 @@
 script = ExtResource("1_1lxa4")
 
 [node name="MicroTimer" type="Timer" parent="." unique_id=1197448936]
+one_shot = true
 
 [node name="TargetButton" type="Button" parent="." unique_id=788258073]
 anchors_preset = 8
