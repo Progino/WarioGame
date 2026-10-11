@@ -23,3 +23,4 @@ offset_top = 353.0
 offset_right = 750.0
 offset_bottom = 380.0
 max_value = 10.0
+show_percentage = false
