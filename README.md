@@ -1,3 +1,7 @@
+A Warioware style game, where you have 5 lives and every minigame you pass you get a point.
+
+
+
 <a id="readme-top"></a>
 
 <!-- SHIELDS -->
